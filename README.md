@@ -29,7 +29,7 @@ Rpi - Rapspberry Pi
 示例传感器 UART通信格式
 
 | 字节顺序 | 说明 | 数值 |
-| - | - |
+| - | - | - |
 | 0 | 起始位 | 0xFF |
 | 1 | 气体名称 CH2O | 0x17 |
 | 2 | 单位 ppb | 0x04 |
@@ -125,7 +125,7 @@ _注：网络交互与签名，由API网关SDK实现，上述格式仅为核心�
 
 2. 接线示意图
 
-![](https://github.com/eckygao/SensorOnTencentCloud/blob/master/images/demo_sotc_rpi_gpio.jpg)
+![](https://github.com/eckygao/SensorOnTencentCloud/blob/master/images/demo_sotc_rpi_gpio.png)
 
 3. 接线说明
 
