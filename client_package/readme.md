@@ -19,20 +19,25 @@ SecretId =  ""    #!!!!!!!在此填入SecretId!!!!!!!
 SecretKey = ""    #!!!!!!!在此填入SecretKey!!!!!!
 ```
 
+### 注意事项说明
+
+- 不同账户的API网关路径不同，不可混用或直接复制
+- 下载SDK后，按上述说明，复制SDK文件夹并配置密钥即可。相关调用均在 lib/apigw.py 封装。
+
 ### 参考效果
 
 文件夹结构
 
 ```
-__init__.py
-api_client.py
-configuration.py
-rest.py
-
-api:
-__init__.py
-sensor_data_api.py
-
-models:
-__init__.py
+.
+└── client_package
+    ├── api
+    │   ├── __init__.py
+    │   ├── sensor_data_api.py
+    ├── api_client.py
+    ├── configuration.py
+    ├── __init__.py
+    ├── models
+    │   ├── __init__.py
+    ├── rest.py
 ```
