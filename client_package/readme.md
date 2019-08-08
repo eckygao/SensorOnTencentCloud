@@ -19,6 +19,15 @@ SecretId =  ""    #!!!!!!!在此填入SecretId!!!!!!!
 SecretKey = ""    #!!!!!!!在此填入SecretKey!!!!!!
 ```
 
+- 修改 项目根目录下 lib/apigw.py 文件
+
+```
+# 将API调用函数，参考你的SDK调用名（详见SDK包中的readme.md样例）
+
+# 当前源码 用于名为 sensor_data 的API网关服务 请按需修改 
+api_instance.post_sensor_data(body=json.dumps(pdata))        
+```
+
 ### 注意事项说明
 
 - 不同账户的API网关路径不同，不可混用或直接复制
